@@ -1,0 +1,16 @@
+# Windows 11 原生通知 (推荐)
+win11toast>=0.35
+
+# 系统托盘图标
+pystray>=0.19
+pillow>=10.0
+
+# 打包 EXE
+pyinstaller>=6.0
+
+# 加密解密（AES-GCM）
+pycryptodome>=3.20
+
+# 备选方案
+# win10toast>=0.9
+# plyer>=2.1.0

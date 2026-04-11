@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Microsoft-like Fluent palette -->
+    <color name="primary">#0F6CBD</color>
+    <color name="primary_dark">#115EA3</color>
+    <color name="primary_light">#DCEEFE</color>
+    <color name="accent">#0F6CBD</color>
+
+    <color name="success">#107C10</color>
+    <color name="error">#D13438</color>
+    <color name="warning">#986F0B</color>
+
+    <color name="bg_light">#F5F5F5</color>
+    <color name="card_bg">#FFFFFF</color>
+    <color name="divider">#E1DFDD</color>
+
+    <color name="text_primary">#1B1A19</color>
+    <color name="text_secondary">#605E5C</color>
+    <color name="text_hint">#8A8886</color>
+</resources>

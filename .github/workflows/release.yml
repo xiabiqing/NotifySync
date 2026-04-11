@@ -1,0 +1,41 @@
+name: Release
+
+on:
+  push:
+    tags:
+      - 'v*'
+
+permissions:
+  contents: write
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Create Release
+        uses: softprops/action-gh-release@v1
+        with:
+          body: |
+            ## 更新内容
+
+            详见 [CHANGELOG.md](CHANGELOG.md)
+
+            ## 下载
+
+            | 平台 | 文件 | 说明 |
+            |------|------|------|
+            | Windows | NotifySync.exe | 服务端程序 |
+            | Android | app-debug.apk | 客户端 APP |
+
+            ## 快速开始
+
+            1. 电脑端运行 `NotifySync.exe`，记录 IP 和端口
+            2. 手机安装 APK，授予通知权限
+            3. 输入电脑 IP:端口，测试连接
+            4. 开始使用！
+
+            详细说明见 [使用说明](docs/USAGE.md)
+          draft: false
+          prerelease: false

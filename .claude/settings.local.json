@@ -1,0 +1,13 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(python3 -c \"from PIL import Image; img = Image.open\\('windows/notifysync.ico'\\); print\\('ICO sizes:', img.size if hasattr\\(img, 'size'\\) else 'N/A'\\); img.save\\('/tmp/test_ico.png'\\); print\\('Saved to check'\\)\")",
+      "Bash(python create_icon.py)",
+      "Bash(python:*)",
+      "Bash(ls:*)",
+      "Bash(python3:*)",
+      "Bash(pip install:*)",
+      "WebSearch"
+    ]
+  }
+}
